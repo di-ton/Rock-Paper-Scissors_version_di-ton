@@ -77,10 +77,10 @@ while game_is_on:
         print("Invalid input. Try again!")
         question_new_game = input("Would you like to play again? Choose Yes (press y) or No (press n): ")
 
-    # question_score = input("Would you like to see your score? Choose Yes (press y) or No (press n): ")
-    # if question_score == "y":
-    #     print(f"Games played: {game_session} Win: {win_counter} Loss: {lose_counter} Draw: {draw_counter}")
-    # elif question_new_game == "n":
-    #     continue
-    # else:
-    #     raise SystemExit("Invalid input. Try again!")
+question_score = input("Would you like to see your score? Choose Yes (press y) or No (press n): ")
+if question_score == "y":
+    print(f"Games played: {game_session} Win: {win_counter} Loss: {lose_counter} Draw: {draw_counter}")
+elif question_new_game == "n":
+    exit()
+else:
+    raise SystemExit("Invalid input. Try again!")
